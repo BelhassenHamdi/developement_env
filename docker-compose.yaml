@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+    jenkins:
+      image: docker.pkg.github.com/belhassenhamdi/smarthouse/jenkins-raspi:2.2
+      container_name: ci_cd
+      ports:
+          - "8080:8080"
+          - "50000:50000"
